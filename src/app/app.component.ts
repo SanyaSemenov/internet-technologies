@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-	public isGreen: boolean = false;
 
-	public toogleGreen() {
-		this.isGreen = !this.isGreen;
-	}
 }
