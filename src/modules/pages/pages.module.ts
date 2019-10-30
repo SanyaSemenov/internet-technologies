@@ -4,6 +4,9 @@ import { MainComponent } from './main/main.component';
 import { ChuckComponent } from './chuck/chuck.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ChuckApiModule } from '../chuck-api';
+import { PipesModule } from 'src/pipes';
+import { DirectivesModule } from 'src/directives';
+import { CardComponent } from './shared/components/card/card.component';
 
 const routes: Routes = [
 	{
@@ -17,7 +20,13 @@ const routes: Routes = [
 ];
 
 @NgModule({
-	declarations: [MainComponent, ChuckComponent],
-	imports: [CommonModule, ChuckApiModule, RouterModule.forChild(routes)]
+	declarations: [MainComponent, ChuckComponent, CardComponent],
+	imports: [
+		CommonModule,
+		ChuckApiModule,
+		RouterModule.forChild(routes),
+		PipesModule,
+		DirectivesModule
+	]
 })
 export class PagesModule {}

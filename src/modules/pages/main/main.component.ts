@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
 
   constructor() { }
+  public testAmount: number = 5525.8888;
 
   ngOnInit() {
   }

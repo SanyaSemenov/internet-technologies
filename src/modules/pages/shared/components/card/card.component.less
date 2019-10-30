@@ -1,0 +1,65 @@
+@import 'variables';
+
+@shiba-width: 1200;
+@shiba-height: 630;
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
+	@media @bp-tablet-up {
+		flex-direction: row;
+	}
+
+	&__image {
+		&__wrapper {
+			@media @bp-tablet-up {
+				flex: 0 0 40%;
+				max-width: 40%;
+			}
+		}
+		background-image: url(/assets/shiba.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		padding-bottom: 100% * @shiba-height / @shiba-width;
+	}
+
+	&__content {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media @bp-tablet-up {
+			flex: 0 0 60%;
+			max-width: 60%;
+		}
+
+		&__title {
+			margin: 0;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+
+		}
+
+		&__footer {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			&__left {
+
+			}
+
+			&__right {
+
+			}
+		}
+	}
+}
