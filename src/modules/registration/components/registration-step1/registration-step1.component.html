@@ -1,0 +1,15 @@
+<form class="layout" [formGroup]="form" (ngSubmit)="submit()">
+	<div class="formControl">
+		<label for="fullName">Full name</label>
+		<input type="text" formControlName="fullName" id="fullName" name="fullName" validationMessage/>
+	</div>
+	<div class="formControl">
+		<label for="email">Email</label>
+		<input type="email" formControlName="email" id="email" name="email" validationMessage/>
+	</div>
+	<div class="formControl">
+		<label for="password">Password</label>
+		<input type="password" formControlName="password" id="password" name="password" validationMessage/>
+	</div>
+	<button class="btn btn__primary">Submit</button>
+</form>

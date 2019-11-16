@@ -1,1 +1,1 @@
-export { StructureModule } from './structure/structure.module';
+export { RegistrationModule } from './registration/registration.module';

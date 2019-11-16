@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --open --port=4500",
+    "postinstall": "cd .api && npm install",
+    "start:client": "ng serve --open --port=4500",
+    "start:mocks": "cd .api && npm run start",
+    "start": "npx concurrently \"npm run start:client\" \"npm run start:mocks\" --names webpack,mock-server",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

@@ -1,0 +1,24 @@
+@import './variables';
+
+.formControl {
+	margin-bottom: 20px;
+}
+
+input {
+	border-radius: 5px;
+	border: 1px solid @clr-tertiary;
+	padding: 5px 10px;
+	width: 100%;
+	outline: none;
+	font-size: inherit;
+
+	&.ng-touched.ng-dirty.ng-invalid {
+		border-color: @clr-error;
+	}
+}
+
+label {
+	font-size: 13px;
+	margin-bottom: 5px;
+	display: block;
+}

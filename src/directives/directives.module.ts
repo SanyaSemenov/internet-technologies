@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UnderlineDirective } from './underline/underline.directive';
+import { ValidationMessageDirective } from './validation-message/validation-message.directive';
 
 @NgModule({
-	declarations: [UnderlineDirective],
-	exports: [UnderlineDirective],
+	declarations: [ValidationMessageDirective],
+	exports: [ValidationMessageDirective],
 	imports: [CommonModule]
 })
 export class DirectivesModule {}

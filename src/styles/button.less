@@ -1,0 +1,20 @@
+@import './variables';
+
+.btn {
+	border-radius: 5px;
+	background: @clr-white;
+	height: 50px;
+	padding: 0px 15px;
+	min-width: 200px;
+	font-size: inherit;
+
+	&__primary {
+		background: @clr-main;
+		color: @clr-white;
+		transition: all 0.15s ease-in-out;
+
+		&:hover {
+			background: darken(@clr-main, 20%);
+		}
+	}
+}
