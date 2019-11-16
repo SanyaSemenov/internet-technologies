@@ -16,7 +16,8 @@ const routes: Routes = [
 		children: [
 			{
 				path: '',
-				component: RegistrationStep1Component
+				// component: RegistrationStep1Component
+				redirectTo: 'step1'
 			},
 			{
 				path: 'step1',
